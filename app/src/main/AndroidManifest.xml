@@ -20,6 +20,10 @@
             </intent-filter>
         </activity>
 
+        <service
+            android:name=".AddressIntentService"
+            android:exported="false"/>
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyD8T00Eay7ijJ-41eWvhNZ9e2VVxrKEQdA"/>

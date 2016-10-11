@@ -24,22 +24,10 @@
                 android:layout_height="match_parent"
                 android:id="@+id/map"
                 tools:context=".MainActivity"
-                android:name="com.google.android.gms.maps.SupportMapFragment" >
-
-                <ImageView
-                    android:id="@+id/iv_marker_pin"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginLeft="5dp"
-                    android:contentDescription="@null"
-                    android:src="@drawable/purplepin"
-                    android:visibility="gone" />
-            </fragment>
+                android:name="com.google.android.gms.maps.SupportMapFragment" />
         </LinearLayout>
 
-        <!--<EditText
+        <EditText
             android:id="@+id/et_location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -48,10 +36,12 @@
             android:gravity="start"
             android:layout_gravity="start"
             android:background="@drawable/bg_white"
-            android:inputType="textCapWords"
+            android:inputType="text|textMultiLine|textCapSentences"
             android:textColorHint="#CCCCCC"
             android:hint="Address"
-            android:textSize="14sp" />-->
+            android:maxLines="3"
+            android:enabled="false"
+            android:textSize="14sp" />
     </FrameLayout>
 
     <LinearLayout
